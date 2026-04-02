@@ -28,9 +28,15 @@ export const siteConfig = {
   addressEn: process.env.NEXT_PUBLIC_ADDRESS_EN || null,
   website: process.env.NEXT_PUBLIC_WEBSITE || null,
   socials: parseJSON<SocialItem[]>(process.env.NEXT_PUBLIC_SOCIALS, [
+  { platform: 'youtube', url: 'https://youtu.be/6jXxmNQkDKs' },
+  { platform: 'threads', url: 'https://www.threads.com/@donghyeog9015' },
+  { platform: 'naver-blog', url: 'https://blog.naver.com/nevertheless-jos' },
   { platform: 'linkedin', url: '' }
 ]),
-  extraContacts: parseJSON<ExtraContactItem[]>(process.env.NEXT_PUBLIC_EXTRA_CONTACTS, []),
+  extraContacts: parseJSON<ExtraContactItem[]>(process.env.NEXT_PUBLIC_EXTRA_CONTACTS, [
+  { type: 'link', label: '링크맵', value: 'linkmap.biz' },
+  { type: 'link', label: '리드트리', value: 'https://readingtree-tan.vercel.app/' }
+]),
   avatarUrl: process.env.NEXT_PUBLIC_AVATAR_URL || `${_basePath}/images/1775104811558-upload.webp`,
   accentColor: process.env.NEXT_PUBLIC_ACCENT_COLOR || '#1e3a5f',
   designPreset: parsePreset(process.env.NEXT_PUBLIC_DESIGN_PRESET || 'pro'),
