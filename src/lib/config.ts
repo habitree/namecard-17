@@ -38,7 +38,7 @@ export const siteConfig = {
   { type: 'link', label: '리드트리', value: 'https://readingtree-tan.vercel.app/' }
 ]),
   avatarUrl: process.env.NEXT_PUBLIC_AVATAR_URL || `${_basePath}/images/1775104811558-upload.webp`,
-  accentColor: process.env.NEXT_PUBLIC_ACCENT_COLOR || '#1e3a5f',
+  accentColor: process.env.NEXT_PUBLIC_ACCENT_COLOR || '#1e1b4b',
   designPreset: parsePreset(process.env.NEXT_PUBLIC_DESIGN_PRESET || 'pro'),
   fontFamily: process.env.NEXT_PUBLIC_FONT_FAMILY || 'Pretendard Variable',
   gaId: process.env.NEXT_PUBLIC_GA_ID || null,
